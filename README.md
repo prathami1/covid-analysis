@@ -1,4 +1,4 @@
-# Coronavirus Data Hub
+# Coronavirus Data Analysis
 A React + Flask web application that details information on the Coronavirus, including datasets, news, a time series analysis, and vaccine distribution information. Utilizes 4 REST APIs in order to serve them into a react application. Utilizes Chart.js for dynamic visualizations. 
 
 ## Summary
