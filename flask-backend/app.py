@@ -1,7 +1,17 @@
 from flask import Flask
+from bs4 import BeautifulSoup
 import requests
+# New imports
+from bokeh.plotting import figure, output_file, show
+from bokeh.embed import json_item
+import json
 
 app = Flask(__name__)
+
+@app.route('/')
+def blank():
+    #Directions for REST API
+    return {"directions":"view the corresponding API requests by navigating to the correct route in the URL. The routes are /data, /time, /news, /vac, and /float. /plot1 is an experimental plot, and is still in production."}
 
 @app.route('/data')
 def index():
@@ -18,7 +28,7 @@ def index():
 
     for i in range(0,25):
         title = data['result']['results'][i]['title']
-        note = data['result']['results'][i]['notes']
+        note = data['result']['results'][i]['notes'][0:300]
         date = data['result']['results'][i]['organization']['created'][0:10]
         heading = data['result']['results'][i]['organization']['title']
         org_img = data['result']['results'][i]['organization']['image_url']
@@ -32,7 +42,7 @@ def index():
         maints.append(maintain)
         urls.append(url)
 
-    results = {"title":titles, "note":notes, "date":dates, "heading":headings, "org_img":org_imgs, "author":maints, "href":urls} 
+    results = {"title":titles, "note":notes, "date":dates, "heading":headings, "org_img":org_imgs, "author":maints, "href":urls}
 
     return results
 
@@ -40,6 +50,9 @@ def index():
 def time():
     response = requests.get('https://api.covidtracking.com/v1/us/daily.json')
     data = response.json()
+
+    response2 = requests.get('https://covid19.mathdro.id/api/countries/us')
+    data2 = response2.json()
 
     dates = []
     states = []
@@ -60,7 +73,11 @@ def time():
     negativeIncreases = []
     positiveIncreases = []
     totalTestResultsIncreases = []
-    
+    confirmeds = []
+    recovereds = []
+    death2s = []
+    lastUp2s = []
+
     for i in range(0, 100):
         date = data[i]['date']
         state = data[i]['states']
@@ -101,7 +118,16 @@ def time():
         positiveIncreases.append(positiveIncrease)
         totalTestResultsIncreases.append(totalTestResultsIncrease)
 
-    results = {"date":dates, "states":states, "positive":positives, "negative":negatives, "pending":pendings, "hospitalizedCurrently":hospitalizedCurrentlys, "hospitalized":hospitalizeds, "inIcuCumulative":inIcuCumulatives, "inIcuCurrently":inIcuCurrentlys, "onVentilatorCurrently":onVentilatorCurrentlys, "onVentilatorCumulative":onVentilatorCumulatives, "dateChecked":dateCheckeds, "death":deaths, "totalTestResults":totalTestResults, "deathIncrease":deathIncreases, "hospitalizedIncrease":hospitalizedIncreases, "negativeIncrease":negativeIncreases, "positiveIncrease":positiveIncreases, "totalTestResultsIncrease":totalTestResultsIncreases}
+    confirmed = data2['confirmed']['value']
+    recovered = data2['recovered']['value']
+    death2 = data2['deaths']['value']
+    lastUp2 = data2['lastUpdate'][0:10]
+    confirmeds.append(confirmed)
+    recovereds.append(recovered)
+    death2s.append(death2)
+    lastUp2s.append(lastUp2)
+
+    results = {"date":dates, "states":states, "positive":positives, "negative":negatives, "pending":pendings, "hospitalizedCurrently":hospitalizedCurrentlys, "hospitalized":hospitalizeds, "inIcuCumulative":inIcuCumulatives, "inIcuCurrently":inIcuCurrentlys, "onVentilatorCurrently":onVentilatorCurrentlys, "onVentilatorCumulative":onVentilatorCumulatives, "dateChecked":dateCheckeds, "death":deaths, "totalTestResults":totalTestResults, "deathIncrease":deathIncreases, "hospitalizedIncrease":hospitalizedIncreases, "negativeIncrease":negativeIncreases, "positiveIncrease":positiveIncreases, "totalTestResultsIncrease":totalTestResultsIncreases, "death2":death2s, "confirmed":confirmeds, "recovered":recovereds, "refresh":lastUp2s}
 
     return results
 
@@ -145,23 +171,64 @@ def vac():
     data = response.json()
 
     states = []
-    regions = []
-    firstDoses = []
+    #regions = []
+    #firstDoses = []
     totalFirsts = []
     totalSeconds = []
+    weeks = []
 
     for i in range(0, 55):
         state = data[i]['jurisdiction']
-        region = data[i]['hhs_region']
-        firstDose = data[i]['first_doses_12_14']
-        totalFirst = data[i]['total_pfizer_allocation_first_dose_shipments']
-        totalSecond = data[i]['total_allocation_pfizer_second_dose_shipments']
+        #region = data[i]['hhs_region']
+        week = data[i]['week_of_allocations'][0:10]
+        #firstDose = data[i]['first_doses_12_14']
+        totalFirst = data[i]['_1st_dose_allocations']
+        totalSecond = data[i]['_2nd_dose_allocations']
         states.append(state)
-        regions.append(region)
-        firstDoses.append(firstDose)
+        #regions.append(region)
+        #firstDoses.append(firstDose)
         totalFirsts.append(totalFirst)
         totalSeconds.append(totalSecond)
-    
-    results = {"state":states, "region":regions, "firstDose":firstDoses, "totalFirst":totalFirsts, "totalSecond":totalSeconds}
+        weeks.append(week)
+
+    results = {"state":states, "week":weeks, "totalFirst":totalFirsts, "totalSecond":totalSeconds}
 
     return results
+
+@app.route('/float')
+def float():
+    page = requests.get('https://www.worldometers.info/coronavirus/')
+    soup = BeautifulSoup(page.content, 'html.parser')
+    statistics = soup.findAll("div", {"id":"maincounter-wrap"})
+    refresh = soup.find('div', {"style":"font-size:13px; color:#999; margin-top:5px; text-align:center"})
+
+    for i in statistics:
+        numbers = soup.findAll('div', {'class':'maincounter-number'})
+        cases = numbers[0].text[1:12]
+        deaths = numbers[1].text[1:10]
+        recovered = numbers[2].text[1:12]
+
+    results = {"cases":cases, "deaths":deaths, "recovered":recovered, "refresh":refresh.text}
+
+    return results
+
+#@app.route('/table')
+#def table():
+    #response = requests.get('https://www.worldometers.info/coronavirus/')
+    #soup = bs.BeautifulSoup(response.text)
+    #table = soup.find("table", {"class":"table table-bordered table-hover main_table_countries dataTable no-footer"})
+
+
+@app.route('/plot1')
+def plot1():
+    # prepare some data
+    x = [1, 2, 3, 4, 5]
+    y = [6, 7, 2, 4, 5]
+
+    # create a new plot with a title and axis labels
+    p = figure(title="simple line example", x_axis_label='x', y_axis_label='y')
+
+    # add a line renderer with legend and line thickness
+    p.line(x, y, legend_label="Temp.", line_width=2)
+
+    return json.dumps(json_item(p, "myplot"))
