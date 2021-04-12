@@ -19,19 +19,23 @@ The first division includes relevant datasets pertaining to the Coronavirus. Eac
 ### Second Division
 The second division contains informational statistics regarding the Coronavirus. It also contains a time series analysis in the form of a graph, and fetches data from [The Covid Tracking Project](https://covidtracking.com).
 
-![](img/img9.png)
+![](img/Time.PNG)
 
 The time series analysis is represented in the form of a graph, with the points plotted being fetched from [The Covid Tracking Project](https://covidtracking.com). Below is an image of the graph with all of the different parameters, represented in a single graph.
 
-![](img/img8.png)
+![](img/Graph.PNG)
 
 The image below represents the dynamic nature of the graph, with adjustable parameters to meet the user's needs. If the user does not need to view a paticular parameter, they can simply cross it out and the graph and axes adjust automatically, all with a smooth animation.
 
-![](img/img7.png)
+![](img/Graph2.PNG)
+
+The second graph represents the derivative (or rate of change) of specific values (such as total cases per day, hospitalizations per day, etc). This graph typically has an oscillating nature due to covid testing practices, but is a good indication of how severe the problem is in the current moment compared to historically what it has been. Similar to the last graph, this graph is also dynamic, allowing the user to alter and adjust the graph as per their discretion. 
+
+![](img/Derivative.PNG)
 
 Below is an image of the footer, with the date the data was last updated, directly pulled from the [The Covid Tracking Project](https://covidtracking.com) API.
 
-![](img/img6.png)
+![](img/Refresh.PNG)
 
 ### Third Division
 The third division contains news regarding the Coronavirus. Each news "cell" contains the title of the article, the author, the publication, the date published, an image of the cover picture, and a brief description of the dataset. It also provides a link to the article for future viewing or learning more. The data and metadata is provided by [newsapi.org](https://newsapi.org).
