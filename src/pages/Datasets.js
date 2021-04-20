@@ -80,25 +80,6 @@ function Datasets() {
             <MiniHead 
               minihead = "Popular Datasets"
             />
-            {/*<p>
-              <Button 
-                precat="By"
-                category="Nation"
-                href = "/"
-              />
-              <a> </a>
-              <Button 
-                precat="By"
-                category="Cases"
-                href = "/"
-              />
-              <a> </a>
-              <Button 
-                precat="By"
-                category="Deaths"
-                href = "/"
-              />
-            </p>*/}
             {/*variable that displays data from what was fetched from flask*/}
             {items}
           </div>
