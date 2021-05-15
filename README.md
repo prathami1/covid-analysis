@@ -1,6 +1,8 @@
 # Coronavirus Data Analysis
 A React + Flask web application that details information on the Coronavirus, including datasets, news, a time series analysis, and vaccine distribution information. Utilizes 4 REST APIs in order to serve them into a react application. Utilizes Chart.js for dynamic visualizations. 
 
+[Here is a video demonstration of the project in action.](https://www.youtube.com/watch?v=gNQbEUpEygU)
+
 ## Summary
 The web application has 4 divisions; one for datasets, one for specific news, one for a time series analysis, and one for vaccine distribution statistics. Each of these tabs utilizes it's own unique REST API that is fetched from the flask backend. The REST API fetches from its distinct API provided from a reputable organization (such as data.gov, cdc.gov, covidtracking.com, or newsapi.org).
 
