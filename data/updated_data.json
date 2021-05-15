@@ -1,0 +1,341 @@
+{
+  "AL": {
+    "avg_icu": 82,
+    "avg_reg": 65,
+    "distributed": "521225",
+    "administered": "221540"
+  },
+  "AK": {
+    "avg_icu": 57,
+    "avg_reg": 63,
+    "distributed": "155700",
+    "administered": "88344"
+  },
+  "AZ": {
+    "avg_icu": 65,
+    "avg_reg": 66,
+    "distributed": "829500",
+    "administered": "360958"
+  },
+  "AR": {
+    "avg_icu": 67,
+    "avg_reg": 58,
+    "distributed": "368650",
+    "administered": "201676"
+  },
+  "CA": {
+    "avg_icu": 69,
+    "avg_reg": 63,
+    "distributed": "4906525",
+    "administered": "2008220"
+  },
+  "CO": {
+    "avg_icu": 58,
+    "avg_reg": 57,
+    "distributed": "692700",
+    "administered": "377283"
+  },
+  "CT": {
+    "avg_icu": 52,
+    "avg_reg": 70,
+    "distributed": "492850",
+    "administered": "306796"
+  },
+  "DE": {
+    "avg_icu": 73,
+    "avg_reg": 62,
+    "distributed": "116325",
+    "administered": "60023"
+  },
+  "FL": {
+    "avg_icu": 75,
+    "avg_reg": 63,
+    "distributed": "2908275",
+    "administered": "1489003"
+  },
+  "GA": {
+    "avg_icu": 78,
+    "avg_reg": 67,
+    "distributed": "1235775",
+    "administered": "604067"
+  },
+  "HI": {
+    "avg_icu": 62,
+    "avg_reg": 69,
+    "distributed": "191575",
+    "administered": "84792"
+  },
+  "ID": {
+    "avg_icu": 50,
+    "avg_reg": 47,
+    "distributed": "181100",
+    "administered": "82640"
+  },
+  "IL": {
+    "avg_icu": 57,
+    "avg_reg": 55,
+    "distributed": "1417250",
+    "administered": "654752"
+  },
+  "IN": {
+    "avg_icu": 67,
+    "avg_reg": 57,
+    "distributed": "841725",
+    "administered": "446029"
+  },
+  "IA": {
+    "avg_icu": 66,
+    "avg_reg": 83,
+    "distributed": "361475",
+    "administered": "180110"
+  },
+  "KS": {
+    "avg_icu": 61,
+    "avg_reg": 52,
+    "distributed": "348175",
+    "administered": "144909"
+  },
+  "KY": {
+    "avg_icu": 78,
+    "avg_reg": 56,
+    "distributed": "471000",
+    "administered": "270960"
+  },
+  "LA": {
+    "avg_icu": 65,
+    "avg_reg": 68,
+    "distributed": "543700",
+    "administered": "315023"
+  },
+  "ME": {
+    "avg_icu": 66,
+    "avg_reg": 57,
+    "distributed": "178450",
+    "administered": "93003"
+  },
+  "MD": {
+    "avg_icu": 73,
+    "avg_reg": 66,
+    "distributed": "742175",
+    "administered": "307411"
+  },
+  "MA": {
+    "avg_icu": 56,
+    "avg_reg": 59,
+    "distributed": "859175",
+    "administered": "392967"
+  },
+  "MI": {
+    "avg_icu": 74,
+    "avg_reg": 66,
+    "distributed": "1095675",
+    "administered": "652661"
+  },
+  "MN": {
+    "avg_icu": 72,
+    "avg_reg": 56,
+    "distributed": "680700",
+    "administered": "305297"
+  },
+  "MS": {
+    "avg_icu": 72,
+    "avg_reg": 75,
+    "distributed": "358100",
+    "administered": "150524"
+  },
+  "MO": {
+    "avg_icu": 68,
+    "avg_reg": 60,
+    "distributed": "661400",
+    "administered": "291723"
+  },
+  "MT": {
+    "avg_icu": 68,
+    "avg_reg": 66,
+    "distributed": "119500",
+    "administered": "72544"
+  },
+  "NE": {
+    "avg_icu": 67,
+    "avg_reg": 73,
+    "distributed": "238100",
+    "administered": "124069"
+  },
+  "NV": {
+    "avg_icu": 75,
+    "avg_reg": 65,
+    "distributed": "286950",
+    "administered": "137031"
+  },
+  "NH": {
+    "avg_icu": 50,
+    "avg_reg": 57,
+    "distributed": "162950",
+    "administered": "89816"
+  },
+  "NJ": {
+    "avg_icu": 59,
+    "avg_reg": 64,
+    "distributed": "989900",
+    "administered": "500889"
+  },
+  "NM": {
+    "avg_icu": 68,
+    "avg_reg": 62,
+    "distributed": "257075",
+    "administered": "184698"
+  },
+  "NY": {
+    "avg_icu": 59,
+    "avg_reg": 57,
+    "distributed": "2395950",
+    "administered": "1282515"
+  },
+  "NC": {
+    "avg_icu": 75,
+    "avg_reg": 73,
+    "distributed": "1246600",
+    "administered": "577007"
+  },
+  "ND": {
+    "avg_icu": 50,
+    "avg_reg": 60,
+    "distributed": "86750",
+    "administered": "68999"
+  },
+  "OH": {
+    "avg_icu": 66,
+    "avg_reg": 61,
+    "distributed": "1233075",
+    "administered": "594924"
+  },
+  "OK": {
+    "avg_icu": 72,
+    "avg_reg": 56,
+    "distributed": "496350",
+    "administered": "304806"
+  },
+  "OR": {
+    "avg_icu": 59,
+    "avg_reg": 55,
+    "distributed": "492450",
+    "administered": "270463"
+  },
+  "PA": {
+    "avg_icu": 75,
+    "avg_reg": 64,
+    "distributed": "1564125",
+    "administered": "695870"
+  },
+  "RI": {
+    "avg_icu": 81,
+    "avg_reg": 78,
+    "distributed": "149225",
+    "administered": "63249"
+  },
+  "SC": {
+    "avg_icu": 74,
+    "avg_reg": 68,
+    "distributed": "453250",
+    "administered": "249155"
+  },
+  "SD": {
+    "avg_icu": 56,
+    "avg_reg": 60,
+    "distributed": "106575",
+    "administered": "77200"
+  },
+  "TN": {
+    "avg_icu": 73,
+    "avg_reg": 64,
+    "distributed": "838825",
+    "administered": "424152"
+  },
+  "TX": {
+    "avg_icu": 83,
+    "avg_reg": 66,
+    "distributed": "3070825",
+    "administered": "1727869"
+  },
+  "UT": {
+    "avg_icu": 58,
+    "avg_reg": 50,
+    "distributed": "341725",
+    "administered": "202729"
+  },
+  "VT": {
+    "avg_icu": 55,
+    "avg_reg": 51,
+    "distributed": "90000",
+    "administered": "49426"
+  },
+  "VA": {
+    "avg_icu": 66,
+    "avg_reg": 60,
+    "distributed": "1069725",
+    "administered": "429297"
+  },
+  "WA": {
+    "avg_icu": 75,
+    "avg_reg": 65,
+    "distributed": "846625",
+    "administered": "436997"
+  },
+  "WV": {
+    "avg_icu": 72,
+    "avg_reg": 57,
+    "distributed": "243100",
+    "administered": "194844"
+  },
+  "WI": {
+    "avg_icu": 56,
+    "avg_reg": 56,
+    "distributed": "610100",
+    "administered": "285630"
+  },
+  "WY": {
+    "avg_icu": 40,
+    "avg_reg": 45,
+    "distributed": "70750",
+    "administered": "37559"
+  },
+  "AS": {
+    "avg_icu": 0,
+    "avg_reg": 0,
+    "distributed": "18450",
+    "administered": "6831"
+  },
+  "GU": {
+    "avg_icu": 66,
+    "avg_reg": 92,
+    "distributed": "34300",
+    "administered": "3791"
+  },
+  "MP": {
+    "avg_icu": 2,
+    "avg_reg": 83,
+    "distributed": "18650",
+    "administered": "8039"
+  },
+  "PR": {
+    "avg_icu": 54,
+    "avg_reg": 50,
+    "distributed": "371550",
+    "administered": "173242"
+  },
+  "VI": {
+    "avg_icu": 30,
+    "avg_reg": 42,
+    "distributed": "13525",
+    "administered": "3355"
+  },
+  "DC": {
+    "avg_icu": 75,
+    "avg_reg": 76,
+    "distributed": "91025",
+    "administered": "59793"
+  },
+  "DK": { "avg_icu": 0, "avg_reg": 0, "distributed": 0, "administered": 0 },
+  "OL": { "avg_icu": 0, "avg_reg": 0, "distributed": 0, "administered": 0 },
+  "PI": { "avg_icu": 0, "avg_reg": 0, "distributed": 0, "administered": 0 }
+}
