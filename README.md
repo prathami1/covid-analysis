@@ -59,8 +59,9 @@ This division also contains a bar graph of the data above it (vaccine dosage shi
 ![](img/img1.png)
 
 ## Quick Walkthrough
-Here is a quick walkthrough of the web application:
-![](demo.mp4)
+![](https://user-images.githubusercontent.com/62070812/118408273-df9b4300-b652-11eb-90bf-3b0b41e47fd2.mov)
+
+
 
 ## Dependencies Utilized
 - [React (JS + JSX)](https://reactjs.org)
