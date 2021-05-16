@@ -58,6 +58,10 @@ This division also contains a bar graph of the data above it (vaccine dosage shi
 
 ![](img/img1.png)
 
+## Quick Walkthrough
+Here is a quick walkthrough of the web application:
+![](demo.mp4)
+
 ## Dependencies Utilized
 - [React (JS + JSX)](https://reactjs.org)
 - [Flask (Python module)](https://flask.palletsprojects.com/en/1.1.x/)
