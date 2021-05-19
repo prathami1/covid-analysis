@@ -64,6 +64,7 @@ This division also contains a bar graph of the data above it (vaccine dosage shi
 ## Dependencies Utilized
 - [React (JS + JSX)](https://reactjs.org)
 - [Flask (Python module)](https://flask.palletsprojects.com/en/1.1.x/)
+- [MongoDB (Database)](https://www.mongodb.com/)
 - [Python](https://www.python.org)
 - [Axios (for graph REST API calls)](https://www.npmjs.com/package/axios)
 - [Data.gov CKAN API](https://data.gov)
@@ -71,3 +72,4 @@ This division also contains a bar graph of the data above it (vaccine dosage shi
 - [The Covid Tracking Project API](https://covidtracking.com)
 - [Cdc.gov API](https://cdc.gov)
 - [Chart.js (for visualizations)](https://www.chartjs.org)
+- [D3.js (for US MAP)](https://d3js.org)
