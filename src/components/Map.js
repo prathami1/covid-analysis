@@ -7,7 +7,7 @@ class Map extends React.Component {
     }
 
   componentDidMount() {
-    fetch('https://tranquil-earth-06116.herokuapp.com/https://backend-hex.herokuapp.com/')
+    fetch('/map')
           .then(response => response.json())
           .then(data => {this.setState({ jsonReturnedValue: data})})
           .catch(err => {console.log(err);});
