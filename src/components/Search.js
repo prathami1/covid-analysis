@@ -14,4 +14,30 @@ function Search(props)
     );
 }
 
+const searchBar = document.getElementById("searchBar");
+const filteredCharacters = hpCharacters.filter(character => { return true; });
+const filteredCharacters = hpCharacters.filter(character => {
+  return (
+    character.name.includes(searchString) ||
+    character.house.includes(searchString)
+  );
+});
+searchBar.addEventListener("keyup", e => {
+  const searchString = e.target.value;
+  const filteredCharacters = hpCharacters.filter(character => {
+    return (
+      character.name.includes(searchString) ||
+      character.house.includes(searchString)
+    );
+  });
+  displayCharacters(filteredCharacters);
+});
+const searchString = e.target.value.toLowerCase();
+const filteredCharacters = hpCharacters.filter(character => {
+  return (
+    character.name.toLowerCase().includes(searchString) ||
+    character.house.toLowerCase().includes(searchString)
+  );
+});
+
 export default Search;
