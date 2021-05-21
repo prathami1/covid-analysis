@@ -1,4 +1,4 @@
-# 🦠 Coronavirus Data Analysis
+# Coronavirus Data Analysis
 A React.js + Flask/MongoDB web application that details information on the Coronavirus, including datasets, news, a time series analysis, and vaccine distribution information. Utilizes 6 APIs in order to fetch and present data via a user friendly interface. Utilizes Chart.js & D3.js for dynamic visualizations.
 
 [Here is a video demonstration of the web application in action.](https://www.youtube.com/watch?v=gNQbEUpEygU)
