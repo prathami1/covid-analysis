@@ -3,7 +3,7 @@ import us
 import private
 import json 
 
-client = MongoClient("mongodb+srv://"+private.user+":"+private.passw+"@cluster0.upbuw.mongodb.net/<dbname>?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://"+private.user+":"+private.passw+"[ENTER_PASS_HERE]")
 db = client.admin
 
 # Test querying, returns json object
@@ -57,14 +57,14 @@ updated_data = create_hos_capacity()
 with open('updated_data.json', 'w') as outfile:
     json.dump(updated_data, outfile)
 
-# def create_simple_dict(field): 
-#   acc = {}
-#   for s in states:
-#     state_data = vac_data.find_one({'abbrev': s})
-#     acc[s] = state_data[field]
+def create_simple_dict(field): 
+  acc = {}
+  for s in states:
+    state_data = vac_data.find_one({'abbrev': s})
+    acc[s] = state_data[field]
 
-# with open('total_vac_data.json', 'w') as outfile:
-#     json.dumps(create_simple_dict('Total Distributed'))
+with open('total_vac_data.json', 'w') as outfile:
+    json.dumps(create_simple_dict('Total Distributed'))
 
-# with open('dist_vac_data.json', 'w') as outfile:
-#     json.dumps(create_simple_dict('Total Administered'))
+with open('dist_vac_data.json', 'w') as outfile:
+    json.dumps(create_simple_dict('Total Administered'))
