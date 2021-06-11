@@ -24,23 +24,23 @@ The first division includes relevant datasets pertaining to the Coronavirus. Eac
 ### Second Division
 The second division contains informational statistics regarding the Coronavirus. It also contains a time series analysis in the form of a graph, and fetches data from [The Covid Tracking Project](https://covidtracking.com).
 
-![](img/covid3.PNG)
+![](img/covid3.png)
 
 The time series analysis is represented in the form of a graph, with the points plotted being fetched from [The Covid Tracking Project](https://covidtracking.com). Below is an image of the graph with all of the different parameters, represented in a single graph.
 
-![](img/covid4.PNG)
+![](img/covid4.png)
 
 The image below represents the dynamic nature of the graph, with adjustable parameters to meet the user's needs. If the user does not need to view a paticular parameter, they can simply cross it out and the graph and axes adjust automatically, all with a smooth animation.
 
-![](img/covid5.PNG)
+![](img/covid5.png)
 
 The second graph represents the derivative (or rate of change) of specific values (such as total cases per day, hospitalizations per day, etc). This graph typically has an oscillating nature due to covid testing practices, but is a good indication of how severe the problem is in the current moment compared to historically what it has been. Similar to the last graph, this graph is also dynamic, allowing the user to alter and adjust the graph as per their discretion. 
 
-![](img/covid6.PNG)
+![](img/covid6.png)
 
 Below is an image of the footer, with the date the data was last updated, directly pulled from the [The Covid Tracking Project](https://covidtracking.com) API.
 
-![](img/covid7.PNG)
+![](img/covid7.png)
 
 ### Third Division
 The third division contains news regarding the Coronavirus. Each news "cell" contains the title of the article, the author, the publication, the date published, an image of the cover picture, and a brief description of the dataset. It also provides a link to the article for future viewing or learning more. The data and metadata is provided by [newsapi.org](https://newsapi.org).
