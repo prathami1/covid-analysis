@@ -14,52 +14,57 @@ This web application consists of two main processes: the python backend and reac
 
 ## Application in action
 The images below outline the applications functionality along with its user interface.
-![](img/img11.png)
+![](img/covid1.png)
 
 ### First Division
 The first division includes relevant datasets pertaining to the Coronavirus. Each dataset "cell" includes the title of the dataset, the author, the organization responsible for publishing, the date it was published, and a brief description of the dataset. It also provides a download link to the dataset, useful if one wants to take a look at the data itself. The data and metadata is provided by [data.gov](https://data.gov).
 
-![](img/img10.png)
+![](img/covid2.png)
 
 ### Second Division
 The second division contains informational statistics regarding the Coronavirus. It also contains a time series analysis in the form of a graph, and fetches data from [The Covid Tracking Project](https://covidtracking.com).
 
-![](img/Time.PNG)
+![](img/covid3.PNG)
 
 The time series analysis is represented in the form of a graph, with the points plotted being fetched from [The Covid Tracking Project](https://covidtracking.com). Below is an image of the graph with all of the different parameters, represented in a single graph.
 
-![](img/Graph.PNG)
+![](img/covid4.PNG)
 
 The image below represents the dynamic nature of the graph, with adjustable parameters to meet the user's needs. If the user does not need to view a paticular parameter, they can simply cross it out and the graph and axes adjust automatically, all with a smooth animation.
 
-![](img/Graph2.PNG)
+![](img/covid5.PNG)
 
 The second graph represents the derivative (or rate of change) of specific values (such as total cases per day, hospitalizations per day, etc). This graph typically has an oscillating nature due to covid testing practices, but is a good indication of how severe the problem is in the current moment compared to historically what it has been. Similar to the last graph, this graph is also dynamic, allowing the user to alter and adjust the graph as per their discretion. 
 
-![](img/Derivative.PNG)
+![](img/covid6.PNG)
 
 Below is an image of the footer, with the date the data was last updated, directly pulled from the [The Covid Tracking Project](https://covidtracking.com) API.
 
-![](img/Refresh.PNG)
+![](img/covid7.PNG)
 
 ### Third Division
 The third division contains news regarding the Coronavirus. Each news "cell" contains the title of the article, the author, the publication, the date published, an image of the cover picture, and a brief description of the dataset. It also provides a link to the article for future viewing or learning more. The data and metadata is provided by [newsapi.org](https://newsapi.org).
 
-![](img/img5.png)
-![](img/img4.png)
+![](img/covid8.png)
+![](img/covid9.png)
 
 ### Fourth Division
-The fourth division contains relevant vaccine information including distribution, from [cdc.gov](https://cdc.gov). 
+The fourth division contains relevant vaccine information including distribution statistics, a visualization of the statistics, and a US Map indicating progress of the vaccine, from [cdc.gov](https://cdc.gov). 
 
-![](img/img3.png)
+![](img/covid10.png)
 
 This division contains vaccine dosage shipments and administrations per each juristriction, all in the form of a scrollable div. It also groups them by region, for easier access to the end user.
 
-![](img/img2.png)
+![](img/covid11.png)
 
 This division also contains a bar graph of the data above it (vaccine dosage shipments and administrations by juristriction), which helps the user view the data relative to itself, in a much easier to view format. 
 
-![](img/img1.png)
+![](img/covid12.png)
+
+Finally, a US Map is presented in order to view the vaccine's progress geographically. By hovering over a state, one can view data presented above (formatted in a mapped fashion), as well as simultaneously viewing the current state of their ICU capacity. The deeper the red, the more crucial the state of emergency is at that specific state.
+
+![](img/covid13.png)
+
 
 ## Dependencies Utilized
 - ⚛ [React (JS + JSX)](https://reactjs.org)
