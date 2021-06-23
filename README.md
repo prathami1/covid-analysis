@@ -1,15 +1,15 @@
-# Coronavirus Data Analysis
+# Coronavirus Data Analysis 🦠
 A React.js + Flask/MongoDB web application that details information on the Coronavirus, including datasets, news, a time series analysis, and vaccine distribution information. Utilizes 6 APIs in order to fetch and present data via a user friendly interface. Utilizes Chart.js & D3.js for dynamic visualizations.
 
 [Here is a video demonstration of the web application in action.](https://youtu.be/imIQD1QbOMA)
 
-## Summary
+## Summary 
 The web application has 4 divisions; one for datasets, one for specific news, one for a time series analysis, and one for vaccine distribution statistics. Each of these tabs utilizes it's own unique REST API that is fetched from the flask backend. The REST API fetches from its distinct API provided from a reputable organization (such as data.gov, cdc.gov, covidtracking.com, or newsapi.org).
 
 ## How it works
 This web application consists of two main processes: the python backend and react front end. First, the python backend starts by fetching the JSON from each respective api for their specific route (as flask routes their return values to that specific tab of the URL), and cycles through the JSON, grabbing whatever it needs. After appending those specific indexes to an array, it then returns that array in the form of a JSON Dictionary, and flask returns it as a REST API for the front end to present. The front end then formats the data it recieves (wether it be datasets and their metadata or positive and negaitve cases per day), presenting it in either a list, scrollable div, or graphical representation, respective to whatever tab it is serving the data on. 
 
-## Quick Walkthrough
+## Quick Walkthrough 📸
 ![](https://user-images.githubusercontent.com/62070812/118408273-df9b4300-b652-11eb-90bf-3b0b41e47fd2.mov)
 
 ## Application in action
