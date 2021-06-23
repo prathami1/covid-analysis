@@ -15,7 +15,7 @@ def blank():
 
 @app.route('/data')
 def index():
-    response = requests.get('https://catalog.data.gov/api/3/action/package_search?q=covid&rows=25')
+    response = requests.get('https://data.gov/[API]')
     data = response.json()
 
     titles = []
@@ -48,10 +48,10 @@ def index():
 
 @app.route('/time')
 def time():
-    response = requests.get('https://api.covidtracking.com/v1/us/daily.json')
+    response = requests.get('https://covidtracking.com/[API]')
     data = response.json()
 
-    response2 = requests.get('https://covid19.mathdro.id/api/countries/us')
+    response2 = requests.get('https://covid19.mathdro.id/[API]')
     data2 = response2.json()
 
     dates = []
@@ -133,7 +133,7 @@ def time():
 
 @app.route('/news')
 def news():
-    response = requests.get('http://newsapi.org/v2/everything?q=covid&pageSize=25&apiKey=d5cdc5700c274b90b91e90eec8d966e3')
+    response = requests.get('http://newsapi.org/[API]')
     data = response.json()
 
     websites = []
@@ -167,7 +167,7 @@ def news():
 
 @app.route('/vac')
 def vac():
-    response = requests.get('https://data.cdc.gov/resource/saz5-9hgg.json')
+    response = requests.get('https://cdc.gov/[API]')
     data = response.json()
 
     states = []
@@ -197,7 +197,7 @@ def vac():
 
 @app.route('/float')
 def float():
-    page = requests.get('https://www.worldometers.info/coronavirus/')
+    page = requests.get('https://www.worldometers.info/[path-to-covid-stats]')
     soup = BeautifulSoup(page.content, 'html.parser')
     statistics = soup.findAll("div", {"id":"maincounter-wrap"})
     refresh = soup.find('div', {"style":"font-size:13px; color:#999; margin-top:5px; text-align:center"})
@@ -214,7 +214,7 @@ def float():
 
 #@app.route('/table')
 #def table():
-    #response = requests.get('https://www.worldometers.info/coronavirus/')
+    #response = requests.get('https://www.worldometers.info/[path-to-covid-stats]')
     #soup = bs.BeautifulSoup(response.text)
     #table = soup.find("table", {"class":"table table-bordered table-hover main_table_countries dataTable no-footer"})
 
