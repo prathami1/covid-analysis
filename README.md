@@ -12,7 +12,7 @@ The web application has 4 divisions; one for datasets, one for specific news, on
 This web application consists of two main processes: the python backend and react front end. First, the python backend starts by fetching the JSON from each respective api for their specific route (as flask routes their return values to that specific tab of the URL), and cycles through the JSON, grabbing whatever it needs. After appending those specific indexes to an array, it then returns that array in the form of a JSON Dictionary, and flask returns it as a REST API for the front end to present. The front end then formats the data it recieves (wether it be datasets and their metadata or positive and negaitve cases per day), presenting it in either a list, scrollable div, or graphical representation, respective to whatever tab it is serving the data on. 
 
 ## Quick Walkthrough 📸
-![](https://user-images.githubusercontent.com/62070812/118408273-df9b4300-b652-11eb-90bf-3b0b41e47fd2.mov)
+https://user-images.githubusercontent.com/62070812/118408273-df9b4300-b652-11eb-90bf-3b0b41e47fd2.mov
 
 ## Application in action
 The images below outline the applications functionality along with its user interface.
