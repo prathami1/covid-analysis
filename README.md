@@ -1,5 +1,5 @@
 # Coronavirus Data Analysis 🦠
-**Licensed to Data Science Group after reaching over 10,000 monthly views!**
+[comment]: <> (**Licensed to Data Science Group after reaching over 10,000 monthly views!**)
 
 A React.js + Flask/MongoDB web application that details information on the Coronavirus, including datasets, news, a time series analysis, and vaccine distribution information. Utilizes 6 APIs in order to fetch and present data via a user friendly interface. Utilizes Chart.js & D3.js for dynamic visualizations.
 
